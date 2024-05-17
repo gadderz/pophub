@@ -3,6 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{86792942-23E4-4399-BB4A-106EEFDEE123}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pophub.Core", "src\Pophub.Core\Pophub.Core.csproj", "{FBFB3217-9BBD-45E9-B960-FF9AC33DB619}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pophub.Application", "src\Pophub.Application\Pophub.Application.csproj", "{CB9CB2CB-5A35-4210-B21A-5832E76EE926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pophub.Infrastructure", "src\Pophub.Infrastructure\Pophub.Infrastructure.csproj", "{4DD906DD-370E-43C1-8ADD-D3411FE07009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pophub.API", "src\Pophub.API\Pophub.API.csproj", "{D74E2CBB-8344-4765-A17F-A51DF2BA8D86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7DC55D67-F698-4066-9EB7-A73E47AF22F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pophub.Application.Tests", "tests\Pophub.Application.Tests\Pophub.Application.Tests.csproj", "{867D6C3F-CAFA-40CC-B5AF-D58E6CC099C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pophub.Core.Tests", "tests\Pophub.Core.Tests\Pophub.Core.Tests.csproj", "{7AA57EEE-3F5C-47B0-913E-18B39D9E0065}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +26,39 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBFB3217-9BBD-45E9-B960-FF9AC33DB619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBFB3217-9BBD-45E9-B960-FF9AC33DB619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBFB3217-9BBD-45E9-B960-FF9AC33DB619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBFB3217-9BBD-45E9-B960-FF9AC33DB619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB9CB2CB-5A35-4210-B21A-5832E76EE926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB9CB2CB-5A35-4210-B21A-5832E76EE926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB9CB2CB-5A35-4210-B21A-5832E76EE926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB9CB2CB-5A35-4210-B21A-5832E76EE926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD906DD-370E-43C1-8ADD-D3411FE07009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD906DD-370E-43C1-8ADD-D3411FE07009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD906DD-370E-43C1-8ADD-D3411FE07009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD906DD-370E-43C1-8ADD-D3411FE07009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D74E2CBB-8344-4765-A17F-A51DF2BA8D86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D74E2CBB-8344-4765-A17F-A51DF2BA8D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D74E2CBB-8344-4765-A17F-A51DF2BA8D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D74E2CBB-8344-4765-A17F-A51DF2BA8D86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{867D6C3F-CAFA-40CC-B5AF-D58E6CC099C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{867D6C3F-CAFA-40CC-B5AF-D58E6CC099C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{867D6C3F-CAFA-40CC-B5AF-D58E6CC099C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{867D6C3F-CAFA-40CC-B5AF-D58E6CC099C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AA57EEE-3F5C-47B0-913E-18B39D9E0065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AA57EEE-3F5C-47B0-913E-18B39D9E0065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA57EEE-3F5C-47B0-913E-18B39D9E0065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AA57EEE-3F5C-47B0-913E-18B39D9E0065}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FBFB3217-9BBD-45E9-B960-FF9AC33DB619} = {86792942-23E4-4399-BB4A-106EEFDEE123}
+		{CB9CB2CB-5A35-4210-B21A-5832E76EE926} = {86792942-23E4-4399-BB4A-106EEFDEE123}
+		{4DD906DD-370E-43C1-8ADD-D3411FE07009} = {86792942-23E4-4399-BB4A-106EEFDEE123}
+		{D74E2CBB-8344-4765-A17F-A51DF2BA8D86} = {86792942-23E4-4399-BB4A-106EEFDEE123}
+		{867D6C3F-CAFA-40CC-B5AF-D58E6CC099C6} = {7DC55D67-F698-4066-9EB7-A73E47AF22F0}
+		{7AA57EEE-3F5C-47B0-913E-18B39D9E0065} = {7DC55D67-F698-4066-9EB7-A73E47AF22F0}
 	EndGlobalSection
 EndGlobal

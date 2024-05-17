@@ -1,0 +1,6 @@
+@Pophub.API_HostAddress = http://localhost:5234
+
+GET {{Pophub.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
