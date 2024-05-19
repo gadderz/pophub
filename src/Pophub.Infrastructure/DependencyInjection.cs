@@ -7,7 +7,10 @@ namespace Pophub.Infrastructure.DependencyInjection;
 
 public static class DependencyInjection
 {
-    public static void AddInfrastructure(this IServiceCollection services, string connectionString)
+    public static void AddInfrastructureServices(
+        this IServiceCollection services,
+        string connectionString
+    )
     {
         services.AddApplicationDbContext(connectionString);
 

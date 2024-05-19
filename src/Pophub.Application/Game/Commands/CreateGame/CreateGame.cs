@@ -5,8 +5,8 @@ namespace Pophub.Application.Game.Commands.CreateGame;
 
 public record CreateGameCommand : IRequest
 {
-    public string Name { get; init; } = string.Empty;
-    public string Description { get; init; } = string.Empty;
+    public string? Name { get; init; }
+    public string? Description { get; init; }
 }
 
 public class CreateGameCommandHandler : IRequestHandler<CreateGameCommand>
@@ -22,8 +22,8 @@ public class CreateGameCommandHandler : IRequestHandler<CreateGameCommand>
     {
         var entity = new Core.Entities.Game
         {
-            Name = request.Name,
-            Description = request.Description,
+            Name = request.Name!,
+            Description = request.Description!,
         };
 
         await _context.AddAsync(entity);

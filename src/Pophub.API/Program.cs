@@ -7,7 +7,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 // Add services to the container.
 builder.Services.AddApplicationServices();
-builder.Services.AddInfrastructure(connectionString!);
+builder.Services.AddInfrastructureServices(connectionString!);
 
 builder.Services.AddControllers();
 

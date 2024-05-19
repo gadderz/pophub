@@ -5,7 +5,7 @@ namespace Pophub.Application.Game.Commands.CreateGameCategory;
 
 public record CreateGameCategoryCommand : IRequest
 {
-    public string Name { get; init; } = string.Empty;
+    public string? Name { get; init; }
 }
 
 public class CreateGameCategoryCommandHandler : IRequestHandler<CreateGameCategoryCommand>
@@ -19,7 +19,7 @@ public class CreateGameCategoryCommandHandler : IRequestHandler<CreateGameCatego
 
     public async Task Handle(CreateGameCategoryCommand request, CancellationToken cancellationToken)
     {
-        var entity = new Core.Entities.GameCategory { Name = request.Name, };
+        var entity = new Core.Entities.GameCategory { Name = request.Name!, };
 
         await _context.AddAsync(entity);
     }
