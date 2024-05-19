@@ -11,6 +11,7 @@ public class GameConfiguration : IEntityTypeConfiguration<Game>
         builder.HasKey(p => p.Id);
         builder.Property(p => p.Name).HasMaxLength(200).IsRequired();
         builder.Property(p => p.Description).HasMaxLength(2000).IsRequired();
+        builder.Property(p => p.ReleaseDate);
 
         builder
             .HasMany(p => p.GameCategories)
