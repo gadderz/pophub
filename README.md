@@ -1,6 +1,6 @@
 # TODO
 
-- [ ] Base architecture
+- [x] Base architecture
 - [ ] Docker build
 - [ ] Games domain
 - [ ] Animes domain
