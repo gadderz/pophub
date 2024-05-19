@@ -9,10 +9,11 @@ public static class DependencyInjection
 {
     public static void AddInfrastructureServices(
         this IServiceCollection services,
-        string connectionString
+        string connectionString,
+        string? migratrionAssembly = null
     )
     {
-        services.AddApplicationDbContext(connectionString);
+        services.AddApplicationDbContext(connectionString, migratrionAssembly);
 
         services.AddScoped<IGameCategoryRepository, GameCategoryRepository>();
         services.AddScoped<IGameRepository, GameRepository>();
