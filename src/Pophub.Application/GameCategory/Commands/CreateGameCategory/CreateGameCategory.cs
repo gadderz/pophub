@@ -19,7 +19,7 @@ public class CreateGameCategoryCommandHandler : IRequestHandler<CreateGameCatego
 
     public async Task Handle(CreateGameCategoryCommand request, CancellationToken cancellationToken)
     {
-        var entity = new Core.Entities.GameCategory { Name = request.Name!, };
+        var entity = new Domain.Entities.GameCategory { Name = request.Name!, };
 
         await _context.AddAsync(entity);
     }

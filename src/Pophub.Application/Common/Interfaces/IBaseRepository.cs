@@ -1,4 +1,4 @@
-using Pophub.Core.Common;
+using Pophub.Domain.Common;
 
 namespace Pophub.Application.Common.Interfaces;
 

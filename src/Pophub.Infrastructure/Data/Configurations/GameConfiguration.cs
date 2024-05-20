@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Pophub.Core.Entities;
+using Pophub.Domain.Entities;
 
 namespace Pophub.Infrastructure.Data.Configurations;
 

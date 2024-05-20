@@ -20,7 +20,7 @@ public class CreateGameCommandHandler : IRequestHandler<CreateGameCommand>
 
     public async Task Handle(CreateGameCommand request, CancellationToken cancellationToken)
     {
-        var entity = new Core.Entities.Game
+        var entity = new Domain.Entities.Game
         {
             Name = request.Name!,
             Description = request.Description!,

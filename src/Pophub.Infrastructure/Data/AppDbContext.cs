@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Pophub.Core.Entities;
+using Pophub.Domain.Entities;
 
 namespace Pophub.Infrastructure.Data;
 

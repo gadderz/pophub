@@ -40,7 +40,7 @@ namespace Pophub.Infrastructure.Migrations.Migrations
                     b.ToTable("GamesToGameCategories");
                 });
 
-            modelBuilder.Entity("Pophub.Core.Entities.Game", b =>
+            modelBuilder.Entity("Pophub.Domain.Entities.Game", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -82,7 +82,7 @@ namespace Pophub.Infrastructure.Migrations.Migrations
                     b.ToTable("Games");
                 });
 
-            modelBuilder.Entity("Pophub.Core.Entities.GameCategory", b =>
+            modelBuilder.Entity("Pophub.Domain.Entities.GameCategory", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -206,13 +206,13 @@ namespace Pophub.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("GamesToGameCategories", b =>
                 {
-                    b.HasOne("Pophub.Core.Entities.GameCategory", null)
+                    b.HasOne("Pophub.Domain.Entities.GameCategory", null)
                         .WithMany()
                         .HasForeignKey("GameCategoriesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Pophub.Core.Entities.Game", null)
+                    b.HasOne("Pophub.Domain.Entities.Game", null)
                         .WithMany()
                         .HasForeignKey("GamesId")
                         .OnDelete(DeleteBehavior.Cascade)

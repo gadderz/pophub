@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="..\Pophub.Core\Pophub.Core.csproj" />
+    <ProjectReference Include="..\Pophub.Domain\Pophub.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />

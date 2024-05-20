@@ -1,6 +1,6 @@
-using Pophub.Core.Common;
+using Pophub.Domain.Common;
 
-namespace Pophub.Core.Entities;
+namespace Pophub.Domain.Entities;
 
 public class Game : BaseAuditableEntity<Guid>
 {

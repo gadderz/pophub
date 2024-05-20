@@ -14,6 +14,6 @@ public class GameMappingProfile : Profile
 {
     public GameMappingProfile()
     {
-        CreateMap<Core.Entities.Game, GameDto>();
+        CreateMap<Domain.Entities.Game, GameDto>();
     }
 }

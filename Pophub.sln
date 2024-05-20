@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{86792942-23E4-4399-BB4A-106EEFDEE123}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pophub.Core", "src\Pophub.Core\Pophub.Core.csproj", "{FBFB3217-9BBD-45E9-B960-FF9AC33DB619}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pophub.Domain", "src\Pophub.Domain\Pophub.Domain.csproj", "{FBFB3217-9BBD-45E9-B960-FF9AC33DB619}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pophub.Application", "src\Pophub.Application\Pophub.Application.csproj", "{CB9CB2CB-5A35-4210-B21A-5832E76EE926}"
 EndProject
@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7DC55D67
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pophub.Application.Tests", "tests\Pophub.Application.Tests\Pophub.Application.Tests.csproj", "{867D6C3F-CAFA-40CC-B5AF-D58E6CC099C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pophub.Core.Tests", "tests\Pophub.Core.Tests\Pophub.Core.Tests.csproj", "{7AA57EEE-3F5C-47B0-913E-18B39D9E0065}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pophub.Domain.Tests", "tests\Pophub.Domain.Tests\Pophub.Domain.Tests.csproj", "{7AA57EEE-3F5C-47B0-913E-18B39D9E0065}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pophub.Infrastructure.Migrations", "src\Pophub.Infrastructure.Migrations\Pophub.Infrastructure.Migrations.csproj", "{462C6AC1-6431-4C01-9ED7-DE07FEFA9438}"
 EndProject
