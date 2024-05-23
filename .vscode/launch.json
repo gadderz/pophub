@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/Pophub.API/bin/Debug/net8.0/Pophub.API.dll",
+            "program": "${workspaceFolder}/src/Web/Pophub.API/bin/Debug/net8.0/Pophub.API.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/src/Pophub.API",
+            "cwd": "${workspaceFolder}/src/Web/Pophub.API",
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
@@ -32,9 +32,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/Pophub.Infrastructure.Migrations/bin/Debug/net8.0/Pophub.Infrastructure.Migrations.dll",
+            "program": "${workspaceFolder}/src/Infrastructure/Pophub.Persistence.Migrations/bin/Debug/net8.0/Pophub.Persistence.Migrations.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/src/Pophub.Infrastructure.Migrations",
+            "cwd": "${workspaceFolder}/src/Infrastructure/Pophub.Persistence.Migrations",
             "stopAtEntry": false,
             "console": "internalConsole"
         },

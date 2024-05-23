@@ -9,6 +9,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Pophub.Application\Pophub.Application.csproj" />
-    <ProjectReference Include="..\Pophub.Infrastructure\Pophub.Infrastructure.csproj" />
+    <ProjectReference Include="..\Pophub.Persistence\Pophub.Persistence.csproj" />
   </ItemGroup>
 </Project>

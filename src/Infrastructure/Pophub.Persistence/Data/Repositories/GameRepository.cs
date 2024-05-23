@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Pophub.Application.Common.Repositories;
 using Pophub.Domain.Entities;
 
-namespace Pophub.Infrastructure.Data.Repositories;
+namespace Pophub.Persistence.Data.Repositories;
 
 public class GameRepository : IGameRepository
 {

@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Pophub.Domain.Entities;
 
-namespace Pophub.Infrastructure.Data;
+namespace Pophub.Persistence.Data;
 
 public class AppDbContext : DbContext
 {

@@ -2,16 +2,16 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Pophub.Infrastructure.Data;
-using Pophub.Infrastructure.DependencyInjection;
+using Pophub.Persistence.Data;
+using Pophub.Persistence.DependencyInjection;
 
 var builder = Host.CreateApplicationBuilder();
 
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-builder.Services.AddInfrastructureServices(
+builder.Services.AddPersistenceServices(
     builder.Configuration.GetConnectionString("DefaultConnection")!,
-    "Pophub.Infrastructure.Migrations"
+    "Pophub.Persistence.Migrations"
 );
 var host = builder.Build();
 

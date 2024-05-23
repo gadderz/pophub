@@ -1,13 +1,13 @@
 using Microsoft.Extensions.DependencyInjection;
 using Pophub.Application.Common.Repositories;
-using Pophub.Infrastructure.Data;
-using Pophub.Infrastructure.Data.Repositories;
+using Pophub.Persistence.Data;
+using Pophub.Persistence.Data.Repositories;
 
-namespace Pophub.Infrastructure.DependencyInjection;
+namespace Pophub.Persistence.DependencyInjection;
 
 public static class DependencyInjection
 {
-    public static void AddInfrastructureServices(
+    public static void AddPersistenceServices(
         this IServiceCollection services,
         string connectionString,
         string? migratrionAssembly = null

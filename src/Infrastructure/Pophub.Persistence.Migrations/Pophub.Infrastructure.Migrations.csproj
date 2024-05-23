@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="..\Pophub.Infrastructure\Pophub.Infrastructure.csproj" />
+    <ProjectReference Include="..\Pophub.Persistence\Pophub.Persistence.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.5">

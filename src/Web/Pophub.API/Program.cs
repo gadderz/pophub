@@ -1,5 +1,5 @@
 using Pophub.Application.DependencyInjection;
-using Pophub.Infrastructure.DependencyInjection;
+using Pophub.Persistence.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +7,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 // Add services to the container.
 builder.Services.AddApplicationServices();
-builder.Services.AddInfrastructureServices(connectionString!);
+builder.Services.AddPersistenceServices(connectionString!);
 
 builder.Services.AddControllers();
 

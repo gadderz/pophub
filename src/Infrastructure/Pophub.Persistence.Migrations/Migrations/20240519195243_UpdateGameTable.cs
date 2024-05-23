@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Pophub.Infrastructure.Migrations.Migrations
+namespace Pophub.Persistence.Migrations.Migrations
 {
     /// <inheritdoc />
     public partial class UpdateGameTable : Migration
@@ -16,15 +16,14 @@ namespace Pophub.Infrastructure.Migrations.Migrations
                 table: "Games",
                 type: "timestamp with time zone",
                 nullable: false,
-                defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
+                defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+            );
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "ReleaseDate",
-                table: "Games");
+            migrationBuilder.DropColumn(name: "ReleaseDate", table: "Games");
         }
     }
 }

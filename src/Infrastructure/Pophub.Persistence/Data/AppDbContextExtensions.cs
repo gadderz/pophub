@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Pophub.Infrastructure.Data;
+namespace Pophub.Persistence.Data;
 
 public static class AppDbContextExtensions
 {
