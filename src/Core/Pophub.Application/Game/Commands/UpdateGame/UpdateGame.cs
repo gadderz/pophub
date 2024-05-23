@@ -1,5 +1,5 @@
 using MediatR;
-using Pophub.Application.Common.Repositories;
+using Pophub.Domain.Repositories;
 
 namespace Pophub.Application.Game.Commands.UpdateGame;
 
@@ -12,16 +12,16 @@ public record UpdateGameCommand : IRequest
 
 public class UpdateGameCommandHandler : IRequestHandler<UpdateGameCommand>
 {
-    private readonly IGameRepository _context;
+    private readonly IGameRepository _repository;
 
-    public UpdateGameCommandHandler(IGameRepository context)
+    public UpdateGameCommandHandler(IGameRepository repository)
     {
-        _context = context;
+        _repository = repository;
     }
 
     public async Task Handle(UpdateGameCommand request, CancellationToken cancellationToken)
     {
-        var entity = await _context.GetByIdAsync(request.Id);
+        var entity = await _repository.GetByIdAsync(request.Id);
 
         if (entity == null)
         {
@@ -31,6 +31,6 @@ public class UpdateGameCommandHandler : IRequestHandler<UpdateGameCommand>
         entity.Name = request.Name!;
         entity.Description = request.Description!;
 
-        await _context.UpdateAsync(entity);
+        await _repository.UpdateAsync(entity);
     }
 }

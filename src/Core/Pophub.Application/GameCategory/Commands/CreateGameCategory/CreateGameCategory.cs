@@ -1,5 +1,5 @@
 using MediatR;
-using Pophub.Application.Common.Repositories;
+using Pophub.Domain.Repositories;
 
 namespace Pophub.Application.Game.Commands.CreateGameCategory;
 
@@ -10,17 +10,17 @@ public record CreateGameCategoryCommand : IRequest
 
 public class CreateGameCategoryCommandHandler : IRequestHandler<CreateGameCategoryCommand>
 {
-    private readonly IGameCategoryRepository _context;
+    private readonly IGameCategoryRepository _repository;
 
-    public CreateGameCategoryCommandHandler(IGameCategoryRepository context)
+    public CreateGameCategoryCommandHandler(IGameCategoryRepository repository)
     {
-        _context = context;
+        _repository = repository;
     }
 
     public async Task Handle(CreateGameCategoryCommand request, CancellationToken cancellationToken)
     {
         var entity = new Domain.Entities.GameCategory { Name = request.Name!, };
 
-        await _context.AddAsync(entity);
+        await _repository.AddAsync(entity);
     }
 }

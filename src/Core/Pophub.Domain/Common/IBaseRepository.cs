@@ -1,6 +1,4 @@
-using Pophub.Domain.Common;
-
-namespace Pophub.Application.Common.Interfaces;
+namespace Pophub.Domain.Common;
 
 public interface IBaseRepository<TEntity, TId>
     where TEntity : BaseEntity<TId>

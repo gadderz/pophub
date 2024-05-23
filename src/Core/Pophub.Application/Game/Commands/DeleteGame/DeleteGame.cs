@@ -1,5 +1,5 @@
 using MediatR;
-using Pophub.Application.Common.Repositories;
+using Pophub.Domain.Repositories;
 
 namespace Pophub.Application.Game.Commands.DeleteGame;
 
@@ -10,22 +10,22 @@ public record DeleteGameCommand : IRequest
 
 public class DeleteGameCommandHandler : IRequestHandler<DeleteGameCommand>
 {
-    private readonly IGameRepository _context;
+    private readonly IGameRepository _repository;
 
-    public DeleteGameCommandHandler(IGameRepository context)
+    public DeleteGameCommandHandler(IGameRepository repository)
     {
-        _context = context;
+        _repository = repository;
     }
 
     public async Task Handle(DeleteGameCommand request, CancellationToken cancellationToken)
     {
-        var entity = await _context.GetByIdAsync(request.Id);
+        var entity = await _repository.GetByIdAsync(request.Id);
 
         if (entity == null)
         {
             throw new Exception("Entity not found");
         }
 
-        await _context.DeleteAsync(entity);
+        await _repository.DeleteAsync(entity);
     }
 }

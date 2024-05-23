@@ -1,5 +1,5 @@
 using MediatR;
-using Pophub.Application.Common.Repositories;
+using Pophub.Domain.Repositories;
 
 namespace Pophub.Application.Game.Commands.CreateGame;
 
@@ -11,11 +11,11 @@ public record CreateGameCommand : IRequest
 
 public class CreateGameCommandHandler : IRequestHandler<CreateGameCommand>
 {
-    private readonly IGameRepository _context;
+    private readonly IGameRepository _repository;
 
-    public CreateGameCommandHandler(IGameRepository context)
+    public CreateGameCommandHandler(IGameRepository repository)
     {
-        _context = context;
+        _repository = repository;
     }
 
     public async Task Handle(CreateGameCommand request, CancellationToken cancellationToken)
@@ -26,6 +26,6 @@ public class CreateGameCommandHandler : IRequestHandler<CreateGameCommand>
             Description = request.Description!,
         };
 
-        await _context.AddAsync(entity);
+        await _repository.AddAsync(entity);
     }
 }

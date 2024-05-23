@@ -1,7 +1,7 @@
 using AutoMapper;
 using MediatR;
-using Pophub.Application.Common.Repositories;
 using Pophub.Application.Game.Models;
+using Pophub.Domain.Repositories;
 
 namespace Pophub.Application.Game.Queries.GetGameById;
 

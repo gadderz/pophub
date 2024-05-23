@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using Pophub.Application.Common.Repositories;
 using Pophub.Domain.Entities;
+using Pophub.Domain.Repositories;
 
 namespace Pophub.Persistence.Data.Repositories;
 

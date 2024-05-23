@@ -1,5 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
-using Pophub.Application.Common.Repositories;
+using Pophub.Domain.Repositories;
 using Pophub.Persistence.Data;
 using Pophub.Persistence.Data.Repositories;
 
