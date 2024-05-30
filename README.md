@@ -1,6 +1,7 @@
 # TODO
 
 - [x] Base architecture
+- [x] Integration with keycloak
 - [ ] Docker build
 - [ ] Games domain
 - [ ] Animes domain
@@ -11,4 +12,3 @@
 - [ ] Animes scraping
 - [ ] Music scraping
 - [ ] Movies/Series scraping
-- [ ] Integration with keycloak

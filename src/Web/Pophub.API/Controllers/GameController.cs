@@ -1,4 +1,5 @@
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Pophub.Application.Game.Commands.CreateGame;
 using Pophub.Application.Game.Commands.DeleteGame;
@@ -52,6 +53,7 @@ public class GameController : ControllerBase
     /// <param name="command"></param>
     /// <returns></returns>
     [HttpPost]
+    [Authorize(Roles = "CreateGame")]
     public async Task<IActionResult> CreateAsync(CreateGameCommand command)
     {
         await _mediator.Send(command);
